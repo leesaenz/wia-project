@@ -95,26 +95,25 @@ $(document).ready(function(){
 	            type: 'area'
 	        },
 	        title: {
-	            text: 'Area chart with negative values'
+	            text: 'Number of Times I\'ve Crushed It'
 	        },
 	        xAxis: {
-	            categories: ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas']
+	            categories: ['Not Crushing It', 'Kind of Crushing It', 'Okay', 'CRUSHING IT']
 	        },
 	        credits: {
 	            enabled: false
 	        },
 	        series: [{
-	            name: 'John',
-	            data: [5, 3, 4, 7, 2]
+	            name: 'Week 1',
+	            data: [5, 3, 4, 7]
 	        }, {
-	            name: 'Jane',
-	            data: [2, -2, -3, 2, 1]
+	            name: 'Week 2',
+	            data: [2, -2, -3, 2]
 	        }, {
-	            name: 'Joe',
-	            data: [3, 4, 4, -2, 5]
+	            name: 'Week 3',
+	            data: [3, 4, 4, -2]
 	        }]
 	    });
 	});
 
-	var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
 });
