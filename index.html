@@ -1,0 +1,118 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/jquery.fancybox.css">
+        <link rel="stylesheet" href="css/hamburgers.min.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header>
+            <video poster="img/video-thumb.jpg" id="homeVideo" loop playsinline autoplay muted>
+                <source src="media/background.webm" type="video/webm">
+                <source src="media/background.mp4" type="video/mp4">
+            </video>
+            <nav class="navbar">
+                <a href="#" class="pause button-clear"><i class="fa fa-pause" aria-hidden="true"></i></a>
+                <div id="hamburger" class="hamburger hamburger--squeeze js-hamburger">
+                    <div class="hamburger-box">
+                      <div class="hamburger-inner"></div>
+                    </div>
+                </div>
+                <ul class="nav">
+                    <li><a href="#portfolio" title="Portfolio">Portfolio</a></li>
+                    <li><a href="#data" title="Data">Data</a></li>
+                    <li><a href="#about" title="About">About</a></li>
+                    <li><a href="#contact" title="Contact">Contact</a></li>
+                </ul>
+            </nav>
+            <h1>Lee Saenz</h1>
+            <h2>UI Developer. UX Strategist. Student.</h2>
+            <a href="#portfolio" class="button portfolio-button">View Portfolio</a>
+        </header>
+        <main class="container" role="content">
+            <section id="portfolio" class="page-block">
+                <h2 class="large"><i class="fa fa-paint-brush" aria-hidden="true"></i> Portfolio</h2>
+                <div class="content portfolio">
+                    <a class="fancybox" rel="group" href="img/p_1_large.jpg"><img src="img/p_1.jpg" alt="" /></a>
+                    <a class="fancybox" rel="group" href="img/p_2_large.png"><img src="img/p_2.jpg" alt="" /></a>
+                    <a class="fancybox" rel="group" href="img/p_3_large.png"><img src="img/p_3.jpg" alt="" /></a>
+                    <a class="fancybox" rel="group" href="img/p_4_large.jpg"><img src="img/p_4.jpg" alt="" /></a>
+                    <a class="fancybox" rel="group" href="img/p_5_large.jpg"><img src="img/p_5.jpg" alt="" /></a>
+                    <a class="fancybox" rel="group" href="img/p_6_large.png"><img src="img/p_6.jpg" alt="" /></a>
+                    <a class="fancybox" rel="group" href="img/p_7_large.png"><img src="img/p_7.jpg" alt="" /></a>
+                    <a class="fancybox" rel="group" href="img/p_8_large.png"><img src="img/p_8.jpg" alt="" /></a>
+                    <a class="fancybox" rel="group" href="img/p_9_large.jpg"><img src="img/p_9.jpg" alt="" /></a>
+                    <a class="fancybox" rel="group" href="img/p_10_large.jpg"><img src="img/p_10.jpg" alt="" /></a>
+                </div>
+            </section>
+            <section id="data" class="page-block">
+                <h2 class="large"><i class="fa fa-bar-chart" aria-hidden="true"></i> Data</h2>
+                <div class="content">
+                    <div id="chart"></div>
+                </div>
+            </section>
+            <section id="about" class="page-block">
+                <h2 class="large"><i class="fa fa-user" aria-hidden="true"></i> About</h2>
+                <div class="content">
+                    <p><img class="profile-pic" src="img/profile.jpg" alt="Lee Saenz"/>Hi, my name is Lee and I love everything about art, web design, development and music.  I am married to my beautiful wife Hannah, and we live on a mountain with our two Huskies.  During the day, I work at MakeMusic developing killer web applications on the front end.  By night, I may or may not be Batman...just saying.</p>
+                    <p>Thanks for stopping by my website to view my work and possibly consider hiring me.  People like you make my world turn!  I hope we can connect.</p>
+                    <p>My skills include Node.js, Angular.js, Ember CLI, HTML5, CSS3, Javscript, jQuery and much, much more.  I love to design things for people in Photoshop and make these things as beautiful as my wife. ;)</p>
+                </div>
+            </section>
+            <section id="contact">
+                <h2 class="large"><i class="fa fa-whatsapp" aria-hidden="true"></i> Contact</h2>
+                <div class="content">
+                    <form class="contactform" action="">
+                        <div class="form-group">
+                            <label for="fname" class="sr-only">First Name</label>
+                            <input type="text" id="fname" placeholder="First Name" required>
+                            <label for="fname" class="sr-only">Last Name</label>
+                            <input type="text" id="lname" placeholder="Last Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="sr-only">Email</label>
+                            <input type="text" id="email" placeholder="Email" required>
+                            <label for="email" class="sr-only">Confirm Email</label>
+                            <input type="text" id="email" placeholder="Confirm Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="sr-only">Message</label>
+                        </div>
+                        <textarea id="message" rows="10" placeholder="Message here..." required></textarea>
+                        <input type="submit" value="Submit">
+                    </form>
+                    <div class="map">
+                        <iframe width="100%" height="450" frameborder="0"
+                         src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAtiG2FWJcfJiNlrLPD5FvHeLlLFEGQ8Nw&q=Boulder+CO" allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </section>
+            <a href="#0" class="top-link top-link-is-visible"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a>
+        </main>
+        <footer class="container">
+            
+        </footer>
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/jquery.fancybox.js"></script>
+        <script src="js/hamburgers.js"></script>
+        <script src="js/highcharts.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
